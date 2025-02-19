@@ -46,6 +46,7 @@ function updateCart() {
         itemDiv.innerHTML = `${item.name} - $${item.price} x${item.quantity} 
     <button class="remove-btn" onclick="removeFromCart(${index})">Скасувати</button>`;
         cartItemsContainer.appendChild(itemDiv);
+        total += item.price * item.quantity;
     });
 
 
